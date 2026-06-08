@@ -38,6 +38,14 @@
 
             <h3>Full-Body Workout</h3>
             <p>A comprehensive workout targeting all major muscle groups for overall strength and fitness.</p>
+            <img src="images/fullbody.jpg" alt="Full Body Workout Image" class="card-image">
+
+            <button onclick="addFavorite(
+                'Full-Body Workout',
+                'images/fullbody.jpg',
+                'A comprehensive workout targeting all major muscle groups.',
+                document.getElementById('fullbody-details').innerHTML
+            )" class="btn">Add to Favorites</button>
 
             <details>
 
@@ -45,7 +53,7 @@
                     View plan details
                 </summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="fullbody-details">
 
                     <h4>Full-Body Workout Plan</h4>
                     <ul>
@@ -84,6 +92,14 @@
                 Focus on building strength in your chest, shoulders,
                 back and arms.
             </p>
+            <img src="images/upperbody.jpg" alt="Upper Body Workout Image" class="card-image">
+
+            <button onclick="addFavorite(
+                'Upper Body Workout',
+                'images/upperbody.jpg',
+                'Focus on building strength in your chest, shoulders, back and arms.',
+                document.getElementById('upperbody-details').innerHTML
+            )" class="btn">Add to Favorites</button>
 
             <details>
 
@@ -91,7 +107,7 @@
                     View Plan
                 </summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="upperbody-details">
 
                     <h4>Upper Body Workout Plan</h4>
 
@@ -131,6 +147,13 @@
             <p>
                 Build strength in your legs, glutes and calves.
             </p>
+            <img src="images/lowerbody.jpg" alt="Lower Body Workout Image" class="card-image">
+            <button onclick="addFavorite(
+                'Lower Body Workout',
+                'images/lowerbody.jpg',
+                'Build strength in your legs, glutes and calves.',
+                document.getElementById('lowerbody-details').innerHTML
+            )" class="btn">Add to Favorites</button>
 
             <details>
 
@@ -138,7 +161,7 @@
                     View Plan
                 </summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="lowerbody-details">
 
                     <h4>Lower Body Workout Plan</h4>
 
@@ -178,6 +201,13 @@
             <p>
                 Improve endurance and burn calories.
             </p>
+            <img src="images/cardio.jpg" alt="Cardio Workout Image" class="card-image">
+            <button onclick="addFavorite(
+                'Cardio Workout Plan',
+                'images/cardio.jpg',
+                'Improve endurance and burn calories.',
+                document.getElementById('cardio-details').innerHTML
+            )" class="btn">Add to Favorites</button>
 
             <details>
 
@@ -185,7 +215,7 @@
                     View Plan
                 </summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="cardio-details">
 
                     <h4>Workout Plan</h4>
 
@@ -218,6 +248,9 @@
     <p>© 2026 Muscle Hub. All rights reserved.</p>
 </footer>
 
+
+
+<script src="favorites.js"></script>
 
 </body>
 </html>

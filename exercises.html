@@ -33,11 +33,20 @@
         <div>
             <h3>Bench Press</h3>
             <p>Builds your chest, shoulders and triceps.</p>
+            <img src="images/benchpress.jpg" alt="Bench Press Image" class="card-image">
+            <button onclick="addFavorite(
+            'Bench Press',
+            'images/benchpress.jpg',
+            'Builds your chest, shoulders and triceps.',
+            document.getElementById('benchpress-details').innerHTML
+            )" class="btn">
+            Add to Favorites
+            </button>
 
             <details>
                 <summary class="btn">View Exercise</summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="benchpress-details">
                     <h4>How To Do It</h4>
                     <ul>
                         <li>Lie flat on a bench with your feet on the floor.</li>
@@ -58,11 +67,19 @@
         <div>
             <h3>Squats</h3>
             <p>Builds strength in your legs and glutes.</p>
-
+            <img src="images/squat.jpg" alt="Squats Image" class="card-image">
+            <button onclick="addFavorite(
+                'Squats',
+                'images/squat.jpg',
+                'Builds strength in your legs and glutes.',
+                document.getElementById('squats-details').innerHTML
+                )" class="btn">
+                 Add to Favorites
+                </button>
             <details>
                 <summary class="btn">View Exercise</summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="squats-details">
                     <h4>How To Do It</h4>
                     <ul>
                         <li>Stand with your feet shoulder-width apart.</li>
@@ -83,11 +100,19 @@
         <div>
             <h3>Pull Ups</h3>
             <p>Improves back and arm strength.</p>
-
+            <img src="images/pullups.jpg" alt="Pull Ups Image" class="card-image">
+            <button onclick="addFavorite(
+                'Pull Ups',
+                'images/pullups.jpg',
+                'Improves back and arm strength.',
+                document.getElementById('pull-ups-details').innerHTML
+                )" class="btn">
+                 Add to Favorites
+                </button>
             <details>
                 <summary class="btn">View Exercise</summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="pull-ups-details">
                     <h4>How To Do It</h4>
                     <ul>
                         <li>Hold the pull-up bar with your palms facing away.</li>
@@ -109,11 +134,19 @@
         <div>
             <h3>Deadlift</h3>
             <p>A powerful exercise for total body strength.</p>
-
+            <img src="images/deadlift.jpg" alt="Deadlift Image" class="card-image">
+            <button onclick="addFavorite(
+                'Deadlift',
+                'images/deadlift.jpg',
+                'A powerful exercise for total body strength.',
+                document.getElementById('deadlift-details').innerHTML
+                )" class="btn">
+                 Add to Favorites
+                </button>
             <details>
                 <summary class="btn">View Exercise</summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="deadlift-details">
                     <h4>How To Do It</h4>
                     <ul>
                         <li>Stand with your feet hip-width apart.</li>
@@ -131,19 +164,13 @@
 
 </section>
 
-
-
-
-
-
-
-
-
-
 <footer>
     <p>© 2026 Muscle Hub. All rights reserved.</p>
 </footer>
 
+
+
+<script src="favorites.js"></script>
 
 </body>
 </html>

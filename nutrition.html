@@ -32,11 +32,20 @@
         <div>
             <h3>High Protein Chicken Bowl</h3>
             <p>A balanced meal packed with protein for muscle growth and recovery.</p>
+            <img src="images/chickenbowl.jpg" alt="High Protein Chicken Bowl Image" class="card-image">
 
+            <button onclick="addFavorite(
+                'High Protein Chicken Bowl',
+                'images/chickenbowl.jpg',
+                'A balanced meal packed with protein for muscle growth and recovery.',
+                document.getElementById('chicken-details').innerHTML
+                )" class="btn">
+                 Add to Favorites
+</button>
             <details>
                 <summary class="btn">View Recipe</summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="chicken-details">
                     <h4>Ingredients</h4>
                     <ul>
                         <li>200g grilled chicken breast</li>
@@ -74,11 +83,19 @@
         <div>
             <h3>Protein Oats</h3>
             <p>A healthy breakfast that gives long-lasting energy.</p>
-
+            <img src="images/proteinoats.jpg" alt="Protein Oats Image" class="card-image">
+            <button onclick="addFavorite(
+                'Protein Oats',
+                'images/proteinoats.jpg',
+                'A healthy breakfast that gives long-lasting energy.',
+                document.getElementById('oats-details').innerHTML
+                )" class="btn">
+                 Add to Favorites
+                </button>
             <details>
                 <summary class="btn">View Recipe</summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="oats-details">
                     <h4>Ingredients</h4>
                     <ul>
                         <li>1 cup oats</li>
@@ -116,11 +133,19 @@
         <div>
             <h3>Protein Smoothie</h3>
             <p>A quick post-workout drink for recovery.</p>
-
+            <img src="images/proteinsmoothie.jpg" alt="Protein Smoothie Image" class="card-image">
+            <button onclick="addFavorite(
+                'Protein Smoothie',
+                'images/proteinsmoothie.jpg',
+                'A quick post-workout drink for recovery.',
+                document.getElementById('smoothie-details').innerHTML
+                )" class="btn">
+                 Add to Favorites
+                </button>
             <details>
                 <summary class="btn">View Recipe</summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="smoothie-details">
                     <h4>Ingredients</h4>
                     <ul>
                         <li>1 banana</li>
@@ -157,11 +182,19 @@
         <div>
             <h3>Salmon & Sweet Potato</h3>
             <p>A nutritious dinner with protein, healthy fats and carbohydrates.</p>
-
+            <img src="images/salmonsweetpotato.jpg" alt="Salmon & Sweet Potato Image" class="card-image">
+            <button onclick="addFavorite(
+                'Salmon & Sweet Potato',
+                'images/salmonsweetpotato.jpg',
+                'A nutritious dinner with protein, healthy fats and carbohydrates.',
+                document.getElementById('salmon-details').innerHTML
+                )" class="btn">
+                 Add to Favorites
+                </button>
             <details>
                 <summary class="btn">View Recipe</summary>
 
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="salmon-details">
                     <h4>Ingredients</h4>
                     <ul>
                         <li>1 salmon fillet</li>
@@ -199,6 +232,9 @@
     <p>© 2026 Muscle Hub. All rights reserved.</p>
 </footer>
 
+
+
+<script src="favorites.js"></script>
 
 </body>
 </html>
