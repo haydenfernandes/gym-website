@@ -25,18 +25,82 @@
 </header>
 
 
+<h2 class="table-title">Meet Our Personal Trainers</h2>
 
+<table class="pt-table">
 
+    <tr>
+        <th>Trainer</th>
+        <th>Email</th>
+        <th>Availability</th>
+    </tr>
 
+    <tr>
+        <td>John Smith</td>
+        <td>john.smith@musclehub.com</td>
+        <td>Mon - Fri (9:00 AM - 5:00 PM)</td>
+    </tr>
 
+    <tr>
+        <td>Sarah Johnson</td>
+        <td>sarah.johnson@musclehub.com</td>
+        <td>Mon - Thu (10:00 AM - 6:00 PM)</td>
+    </tr>
 
+    <tr>
+        <td>Michael Brown</td>
+        <td>michael.brown@musclehub.com</td>
+        <td>Tue - Sat (8:00 AM - 4:00 PM)</td>
+    </tr>
 
+    <tr>
+        <td>Emma Wilson</td>
+        <td>emma.wilson@musclehub.com</td>
+        <td>Mon - Fri (12:00 PM - 8:00 PM)</td>
+    </tr>
+
+</table>
+
+<h3 class="table-title">Have Questions? Contact Us!</h3>
+
+<div class="contact-container">
+
+        <form id="contactForm">
+
+            <label>Full Name</label>
+            <input type="text" id="name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="email" required>
+
+            <label>Subject</label>
+            <input type="text" id="subject" required>
+
+            <label>Message</label>
+            <textarea id="message" rows="6" required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+    <h2>Submitted Messages</h2>
+
+    <div id="messages"></div>
+
+</section>
+
+</div>
 
 
 <footer>
     <p>© 2026 Muscle Hub. All rights reserved.</p>
 </footer>
 
+<script src="contact.js"></script>
 
 </body>
 </html>
